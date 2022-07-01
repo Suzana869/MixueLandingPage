@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixue</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./main.css">
+    
+</head>
+<body>
+    <section class="container">
+        <div class="circle">  
+        </div>
+        <header>
+            <a href="#" class="logo"><img src="./Img/logo_mixue.png" alt=""></a>
+            <ul>
+                <li><a class="active" href="#">Home </a></li>
+                <li><a class="menu_container" href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+      
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Cream </h2><br>
+                <h2>It's <span>Mixue</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur quos labore laborum beatae sit alias, molestias dolor dolorum autem esse? Necessitatibus alias soluta, incidunt aliquam repellat sequi dignissimos laboriosam saepe?</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="./Img/img1.PNG" class="Mixue" alt="">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="/Img/thumb1.png" onclick="imgSlider('./Img/img1.PNG'); changeCireleColor('#eba56e')"></li>
+            <li><img src="./Img/thumb2.png" onclick="imgSlider('./Img/img2.PNG'); changeCireleColor('#b73327')"></li>
+            <li><img src="./Img/thumb3.png" onclick="imgSlider('./Img/img3.PNG'); changeCireleColor('#aed07b')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href=""><img src="./Img/facebook.png"></a></li>
+            <li><a href=""><img src="./Img/instagram.png"></a></li>
+            <li><a href=""><img src="./Img/twitter.png"></a></li>
+        </ul>
+
+        <script  type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.Mixue').src = anything;
+            }
+
+            function changeCireleColor(color){
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            }
+        </script>
+    </section>
+</body>
+</html>
